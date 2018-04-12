@@ -1,4 +1,4 @@
-# niort bus Progressive Web App
+# Niort Bus Progressive Web App
 
 ## A propos
 
