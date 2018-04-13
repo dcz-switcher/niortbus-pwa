@@ -29,5 +29,12 @@
     height: 100%;
     background-color: rgb(238, 238, 238);
 
-    left: 90%;
+    left: 100%;
+
+    transition-duration: .350s;
+    transition-property: left;
+}
+
+.Detail-view.show{
+    left: 0;
 }
