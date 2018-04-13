@@ -6,14 +6,19 @@ import HomeView from './views/HomeView';
 import DetailView from './views/DetailView';
 
 class App extends Component {
-  render() {
-    return (
-        <div className="App">
-            <HomeView/>
-            <DetailView/>
-        </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <HomeView onSelect={this.onSelectHandler}/>
+                <DetailView/>
+            </div>
+        );
+    }
+
+
+    onSelectHandler = () => {
+        console.log('tap');
+    }
 }
 
 export default App;
