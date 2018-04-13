@@ -1,3 +1,0 @@
-# niortbus-pwa
-
-## test
