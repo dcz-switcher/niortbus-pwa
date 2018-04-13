@@ -4,6 +4,8 @@ import './App.css';
 
 import LineButton from './components/LineButton';
 
+import HomeView from './views/HomeView';
+
 class App extends Component {
   render() {
     return (
