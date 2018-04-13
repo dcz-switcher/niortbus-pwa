@@ -14,7 +14,7 @@
 
 .Line-button:active {
     opacity: .6;
-    transform: scale(.97);
+    transform: scale(.99);
 }
 
 .Line-number{
