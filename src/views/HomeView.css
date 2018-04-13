@@ -1,0 +1,25 @@
+h1{
+    /* Lignes TAN: */
+    font-family: Roboto-Black;
+    font-size: 36px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+h4{
+    /* Niort bus: */
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #9B9B9B;
+    padding: 0;
+    margin: 0 0 4px 0;
+}
+
+.Home-view > .Home-header {
+    padding: 27px 20px;
+}
+
+.Home-view > .Home-body {
+    padding: 0 20px;
+}
