@@ -19,7 +19,7 @@ class App extends Component {
 
         const busId = this.state.busId;
         const showDetailView = busId !== null ? (
-            <DetailView onClick={this.onBack} busId={this.state.busId} />
+            <DetailView onClick={this.onBack} busId={busId} />
         ) 
         : ( null );
 
