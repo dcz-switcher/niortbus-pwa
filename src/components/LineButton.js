@@ -4,9 +4,9 @@ import './LineButton.css';
 import LineNumbers from './../assets/line-numbers.png'
 
 
-const LineButton = ({start, end, number, onTap}) => (
-    <div className="Line-button" onClick={() => onTap()} style={LineStyle['LineColor' + number]}>
-        <div className="Line-number" style={Object.assign({backgroundImage : 'url(' + LineNumbers + ')'}, LineStyle['LineNumber' + number])}></div>
+const LineButton = ({start, end, busId, onTap}) => (
+    <div className="Line-button" onClick={() => onTap(busId)} style={LineStyle['LineColor' + busId]}>
+        <div className="Line-number" style={Object.assign({backgroundImage : 'url(' + LineNumbers + ')'}, LineStyle['LineNumber' + busId])}></div>
         <div className="Line-endpoints">
             <div className="Line-stop">{start}</div>
             <div className="Line-stop">{end}</div>

@@ -11,26 +11,33 @@ class App extends Component {
         super(props);
 
         this.state = {
-            showDetail: false,
+            busId: null,
         };
     }
 
-
     render() {
+
+        const busId = this.state.busId;
+        const showDetailView = busId !== null ? (
+            <DetailView onClick={this.onBack} busId={this.state.busId} />
+        ) 
+        : ( null );
+
         return (
             <div className="App">
                 <HomeView onSelect={this.onSelectHandler}/>
-                <DetailView visible={this.state.showDetail} onClick={this.onBack}/>
+
+                {showDetailView}
             </div>
         );
     }
 
     onBack = () => {
-        this.setState({showDetail: !this.state.showDetail})
+        this.setState({busId: null});
     }
 
-    onSelectHandler = () => {
-        this.setState({showDetail: !this.state.showDetail})
+    onSelectHandler = (_busId) => {
+        this.setState({busId: _busId});
     }
 }
 
