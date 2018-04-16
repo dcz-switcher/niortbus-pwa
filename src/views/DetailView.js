@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './DetailView.css';
 
 import DetailHeader from './../components/DetailHeader';
-
+import StopItem from './../components/StopItem';
 
 export default class DetailView extends Component{
 
@@ -27,10 +27,23 @@ export default class DetailView extends Component{
 
         return (
             <div className={this.isVisible()}>
+                <button style={style.backBtn} onClick={() => this.props.onClick() }> BACK </button>
                 <DetailHeader start={data.departure} end={data.arrival} color={line.color} numberPosition={line.numberPosition} />
-                <button onClick={() => this.props.onClick() }> BACK </button>
+                <div>
+                    <StopItem />
+                </div>
             </div>
         );
+    }
+}
+
+
+const style = {
+    backBtn : {
+        position: 'absolute',
+        top: '10px',
+        right: '10px',
+        color: 'white',
     }
 }
 
