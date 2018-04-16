@@ -1,0 +1,26 @@
+.Stop-item{
+    display: flex;
+}
+
+.Stop-item > .Hour {
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #4A90E2;
+    margin: 0 20px;
+}
+
+.Stop-item > .Dot {
+    background: #FFFFFF;
+    border: 3px solid #ED1D25;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+
+}
+
+.Stop-item > .Name {
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    color: #4A4A4A;
+    margin: 0 20px;
+}
