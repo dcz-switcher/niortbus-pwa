@@ -35,14 +35,12 @@ export default class DetailView extends Component{
 
 DetailView.propTypes = {
     onClick: PropTypes.func.isRequired,
-    line: PropTypes.objectOf(
-        PropTypes.shape({
-            busId: PropTypes.string.isRequired,
-            color: PropTypes.string.isRequired,
-            start: PropTypes.string.isRequired,
-            end: PropTypes.string.isRequired,
-            numberPosition: PropTypes.string.isRequired,
-            data: PropTypes.object.isRequired,
-        })
-    ).isRequired,
+    line: PropTypes.shape({
+        busId: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
+        start: PropTypes.string.isRequired,
+        end: PropTypes.string.isRequired,
+        numberPosition: PropTypes.string.isRequired,
+        data: PropTypes.object.isRequired,
+    }).isRequired,
 }
