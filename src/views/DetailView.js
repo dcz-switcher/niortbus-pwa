@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 
 import './DetailView.css';
 
+import DetailHeader from './../components/DetailHeader';
+
+
 export default class DetailView extends Component{
 
     constructor(props){
@@ -18,15 +21,14 @@ export default class DetailView extends Component{
     }
 
     render() {
+
+        const line = this.props.line;
+        const data = line.data;
+
         return (
             <div className={this.isVisible()}>
+                <DetailHeader start={data.departure} end={data.arrival} color={line.color} numberPosition={line.numberPosition} />
                 <button onClick={() => this.props.onClick() }> BACK </button>
-                <h4>Niort bus</h4>
-                <h1>Detail View {this.props.line.busId}</h1>
-                <div>
-                    <div>{this.props.line.data.departure}</div>
-                    <div>{this.props.line.data.arrival}</div>
-                </div>
             </div>
         );
     }

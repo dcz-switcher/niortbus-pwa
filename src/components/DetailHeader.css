@@ -1,0 +1,40 @@
+.Line-header{
+    /* Rectangle: */
+    background: #ED1D25;
+    font-family: Roboto-Medium;
+    font-size: 22px;
+    color: #FFFFFF;
+    height: 74px;
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 24px;
+}
+
+.Line-header:active {
+    opacity: .6;
+    transform: scale(.99);
+}
+
+.Line-number{
+    margin-top: 10px;
+    width: 74px;
+    min-width: 74px;
+    height: 64px;
+    background-position: 74px 0px;
+}
+
+.Line-endpoints{
+    margin-left: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 0;
+    padding: 6px 0;
+}
+
+.Line-stop{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
