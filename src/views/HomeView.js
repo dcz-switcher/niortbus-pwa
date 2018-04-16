@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './HomeView.css';
 
@@ -23,5 +24,10 @@ const HomeView = ({onSelect}) => (
         </div>
     </div>
 );
+
+HomeView.propTypes = {
+    onSelect: PropTypes.func.isRequired,
+}
+
 
 export default HomeView;

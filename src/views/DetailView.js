@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import PropTypes from 'prop-types';
 
 import './DetailView.css';
 
@@ -19,4 +19,10 @@ export default class DetailView extends Component{
             </div>
         );
     }
+}
+
+
+DetailView.propTypes = {
+    onClick: PropTypes.func.isRequired,
+    busId: PropTypes.string.isRequired,
 }

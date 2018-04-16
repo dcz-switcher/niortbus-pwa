@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './LineButton.css';
 import LineNumbers from './../assets/line-numbers.png'
@@ -14,5 +15,10 @@ const LineButton = ({line, onTap}) => (
     </div>
 
 )
+
+LineButton.propTypes = {
+    line: PropTypes.object.isRequired,
+    onTap: PropTypes.func.isRequired,
+};
 
 export default LineButton;
