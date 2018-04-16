@@ -5,8 +5,8 @@ import './LineButton.css';
 import LineNumbers from './../assets/line-numbers.png'
 
 
-const LineButton = ({line, onTap}) => (
-    <div className="Line-button" onClick={() => onTap(line.busId)} style={{backgroundColor: line.color}}>
+const LineButton = ({line, onSelect}) => (
+    <div className="Line-button" onClick={() => onSelect()} style={{backgroundColor: line.color}}>
         <div className="Line-number" style={{backgroundImage : 'url(' + LineNumbers + ')', backgroundPosition: line.numberPosition}}></div>
         <div className="Line-endpoints">
             <div className="Line-stop">{line.start}</div>
@@ -18,7 +18,7 @@ const LineButton = ({line, onTap}) => (
 
 LineButton.propTypes = {
     line: PropTypes.object.isRequired,
-    onTap: PropTypes.func.isRequired,
+    onSelect: PropTypes.func.isRequired,
 };
 
 export default LineButton;

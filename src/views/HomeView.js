@@ -18,7 +18,7 @@ const HomeView = ({onSelect}) => (
                 Config.lines.map((line, index) => {
                     return <LineButton key={line.busId} 
                             line={line}
-                            onTap={(busId) => onSelect(busId)} />;
+                            onSelect={() => onSelect(line)} />;
                 })
             }
         </div>

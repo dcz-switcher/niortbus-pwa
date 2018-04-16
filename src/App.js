@@ -11,15 +11,15 @@ class App extends Component {
         super(props);
 
         this.state = {
-            busId: null,
+            lineSelected: null,
         };
     }
 
     render() {
 
-        const busId = this.state.busId;
-        const showDetailView = busId !== null ? (
-            <DetailView onClick={this.onBack} busId={busId} />
+        const _lineSelected = this.state.lineSelected;
+        const showDetailView = _lineSelected !== null ? (
+            <DetailView onClick={this.onBack} line={_lineSelected} />
         ) 
         : ( null );
 
@@ -33,11 +33,11 @@ class App extends Component {
     }
 
     onBack = () => {
-        this.setState({busId: null});
+        this.setState({lineSelected: null});
     }
 
-    onSelectHandler = (_busId) => {
-        this.setState({busId: _busId});
+    onSelectHandler = (line) => {
+        this.setState({lineSelected: line});
     }
 }
 
