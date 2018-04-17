@@ -11,7 +11,10 @@
     font-family: Roboto-Regular;
     font-size: 18px;
     color: #4A90E2;
-    margin: 0 20px;
+    width: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Stop-item > .Stop-detail > .Dot {
@@ -28,6 +31,8 @@
     font-size: 18px;
     color: #4A4A4A;
     margin: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 .Stop-item > .Stop-action > .Line {
