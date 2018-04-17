@@ -6,6 +6,8 @@ import './DetailView.css';
 import DetailHeader from './../components/DetailHeader';
 import StopItem from './../components/StopItem';
 
+import backBtn from './../assets/ic_close_white_24px.svg';
+
 export default class DetailView extends Component{
 
     constructor(props){
@@ -29,7 +31,7 @@ export default class DetailView extends Component{
 
         return (
             <div className={this.isVisible()}>
-                <button style={style.backBtn} onClick={() => this.props.onClick() }> BACK </button>
+                <img src={backBtn} style={style.backBtn} onClick={() => this.props.onClick() }/>
                 <DetailHeader start={data.departure} end={data.arrival} color={line.color} numberPosition={line.numberPosition} />
                 <div className='Detail-stops'>
                     {
