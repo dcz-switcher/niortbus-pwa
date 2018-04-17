@@ -1,15 +1,20 @@
 .Stop-item{
     display: flex;
+    flex-direction: column;
 }
 
-.Stop-item > .Hour {
+.Stop-detail {
+    display: flex;
+}
+
+.Stop-item > .Stop-detail > .Hour {
     font-family: Roboto-Regular;
     font-size: 18px;
     color: #4A90E2;
     margin: 0 20px;
 }
 
-.Stop-item > .Dot {
+.Stop-item > .Stop-detail > .Dot {
     background: #FFFFFF;
     border: 3px solid #ED1D25;
     width: 18px;
@@ -18,9 +23,17 @@
 
 }
 
-.Stop-item > .Name {
+.Stop-item > .Stop-detail > .Name {
     font-family: Roboto-Regular;
     font-size: 18px;
     color: #4A4A4A;
     margin: 0 20px;
+}
+
+.Stop-item > .Stop-action > .Line {
+    /* Line: */
+    background-color: #ED1D25;
+    width: 3px;
+    height: 20px;
+    margin: 0 95px;
 }
