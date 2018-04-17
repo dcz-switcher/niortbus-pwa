@@ -25,12 +25,18 @@ export default class DetailView extends Component{
         const line = this.props.line;
         const data = line.data;
 
+        console.log(data.periodes[0]['aller']);
+
         return (
             <div className={this.isVisible()}>
                 <button style={style.backBtn} onClick={() => this.props.onClick() }> BACK </button>
                 <DetailHeader start={data.departure} end={data.arrival} color={line.color} numberPosition={line.numberPosition} />
                 <div>
-                    <StopItem />
+                    {
+                        data.periodes[0]['aller'].map((stop, index) => {
+                            return <StopItem key={index} name={stop.name}/>
+                        })
+                    }
                 </div>
             </div>
         );
