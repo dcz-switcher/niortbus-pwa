@@ -43,3 +43,7 @@
     height: 20px;
     margin: 0 95px;
 }
+
+.Stop-item:last-child > .Stop-action > .Line {
+    visibility: hidden;
+}
