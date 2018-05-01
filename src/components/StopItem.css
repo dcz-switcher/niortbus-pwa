@@ -49,9 +49,19 @@
 }
 
 .Stop-item > .Hour-scroller {
-    background-color: red;
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0;
+    height: 36px;
+    background-color: #4a90e2;
+    display: flex;
+    align-items: center;
 }
 
 .Stop-item .HourScroller-item{
-    background-color: peachpuff;
+    color: white;
+    display: inline-block;
+    padding: 4px 8px;
 }
