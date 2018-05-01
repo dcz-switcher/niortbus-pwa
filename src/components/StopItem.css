@@ -47,3 +47,11 @@
 .Stop-item:last-child > .Stop-action > .Line {
     visibility: hidden;
 }
+
+.Stop-item > .Hour-scroller {
+    background-color: red;
+}
+
+.Stop-item .HourScroller-item{
+    background-color: peachpuff;
+}

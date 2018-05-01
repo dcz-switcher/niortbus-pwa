@@ -31,12 +31,12 @@ export default class DetailView extends Component{
 
         return (
             <div className={this.isVisible()}>
-                <img src={backBtn} style={style.backBtn} onClick={() => this.props.onClick() }/>
+                <img src={backBtn} style={style.backBtn} onClick={() => this.props.onClick() } alt=''/>
                 <DetailHeader start={data.departure} end={data.arrival} color={line.color} numberPosition={line.numberPosition} />
                 <div className='Detail-stops'>
                     {
                         data.periodes[0]['aller'].map((stop, index) => {
-                            return <StopItem key={index} name={stop.name}/>
+                            return <StopItem key={index} name={stop.name} stops={stop.stops}/>
                         })
                     }
                 </div>
