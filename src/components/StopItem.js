@@ -34,7 +34,7 @@ export default class StopItem extends Component{
                     <div className='Dot'></div>
                     <div className='Name'>{this.props.name}</div>
                 </div>
-                <div className='Hour-scroller'>
+                <div className='Hour-scroller' style={{backgroundColor: this.props.color}}>
                     {hourScroll}
                 </div>
                 <div className='Stop-action'>
@@ -48,4 +48,5 @@ export default class StopItem extends Component{
 StopItem.propTypes = {
     name: PropTypes.string.isRequired,
     stops: PropTypes.array.isRequired,
+    color: PropTypes.string.isRequired,
 };

@@ -36,7 +36,7 @@ export default class DetailView extends Component{
                 <div className='Detail-stops'>
                     {
                         data.periodes[0]['aller'].map((stop, index) => {
-                            return <StopItem key={index} name={stop.name} stops={stop.stops}/>
+                            return <StopItem key={index} name={stop.name} stops={stop.stops} color={line.color}/>
                         })
                     }
                 </div>
