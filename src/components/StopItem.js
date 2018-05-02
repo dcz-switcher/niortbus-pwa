@@ -33,7 +33,7 @@ export default class StopItem extends Component{
 
 
         const stopDetailNode = (expanded) ? (
-            <div className='Stop-detail-expanded'>
+            <div className='Stop-detail-expanded' style={{backgroundColor: color}}>
                 <div className='Dot'></div>
                 <div className='Name'>{stop.name}</div>
             </div>
