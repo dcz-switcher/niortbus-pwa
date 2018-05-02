@@ -8,35 +8,41 @@ export default class StopItem extends Component{
     constructor(props){
         super(props);
 
-        this.state = {
-            showHours : false,
-        };
+        this.state = {};
     }
 
     // syntax for get access to "this"
     clickHandler = () => {
-        console.log(this.props.name);
-        this.setState({showHours: !this.state.showHours});
+        const value = (this.props.expanded) ? null : this.props.id;
+        
+        this.props.clicked(value);
     }
 
     render(){
 
-        const hourScroll = this.props.stops.map((item, index) => {
+        const stop = this.props.stop;
+        const color = this.props.color;
+        const expanded = this.props.expanded;
+
+
+        const hourScroll = (expanded) ? (stop.stops.map((item, index) => {
             return (
                 <div key={index} className='HourScroller-item'>{item}</div>
             )
-        });
+        })) : null;
 
         return (
             <div className='Stop-item' onClick={this.clickHandler}>
                 <div className='Stop-detail'>
-                    <div className='Hour'>{this.props.stops[0]}</div>
+                    <div className='Hour'>{stop.stops[0]}</div>
                     <div className='Dot'></div>
-                    <div className='Name'>{this.props.name}</div>
+                    <div className='Name'>{stop.name}</div>
                 </div>
-                <div className='Hour-scroller' style={{backgroundColor: this.props.color}}>
-                    {hourScroll}
-                </div>
+                { expanded &&
+                    <div className='Hour-scroller' style={{backgroundColor: color}}>
+                        {hourScroll}
+                    </div>
+                }
                 <div className='Stop-action'>
                     <div className='Line'></div>
                 </div>
@@ -46,7 +52,9 @@ export default class StopItem extends Component{
 }
 
 StopItem.propTypes = {
-    name: PropTypes.string.isRequired,
-    stops: PropTypes.array.isRequired,
+    id: PropTypes.number.isRequired,
+    clicked: PropTypes.func.isRequired,
+    stop: PropTypes.object.isRequired,
     color: PropTypes.string.isRequired,
+    expanded: PropTypes.bool.isRequired,
 };

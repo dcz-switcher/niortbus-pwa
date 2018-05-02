@@ -13,7 +13,9 @@ export default class DetailView extends Component{
     constructor(props){
         super(props);
 
-        this.state = {};
+        this.state = {
+            stopItemExpanded: null,
+        };
     }
 
 
@@ -36,7 +38,12 @@ export default class DetailView extends Component{
                 <div className='Detail-stops'>
                     {
                         data.periodes[0]['aller'].map((stop, index) => {
-                            return <StopItem key={index} name={stop.name} stops={stop.stops} color={line.color}/>
+                            return <StopItem key={index}
+                                        id={index} 
+                                        stop={stop}
+                                        color={line.color}
+                                        expanded={index === this.state.stopItemExpanded}
+                                        clicked={(id) => this.setState({stopItemExpanded: id})}/>
                         })
                     }
                 </div>
