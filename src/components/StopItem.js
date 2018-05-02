@@ -18,6 +18,10 @@ export default class StopItem extends Component{
         this.props.clicked(value);
     }
 
+    hourClickHandler = () => {
+        console.log("click")
+    }
+
     render(){
 
         const stop = this.props.stop;
@@ -27,7 +31,7 @@ export default class StopItem extends Component{
 
         const hourScroll = (expanded) ? (stop.stops.map((item, index) => {
             return (
-                <div key={index} className='HourScroller-item'>{item}</div>
+                <div key={index} className='HourScroller-item' onClick={this.hourClickHandler}>{item}</div>
             )
         })) : null;
 
