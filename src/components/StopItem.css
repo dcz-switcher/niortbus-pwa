@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.Stop-detail {
+.Stop-detail, .Stop-detail-expanded {
     display: flex;
 }
 
@@ -23,7 +23,6 @@
     width: 18px;
     height: 18px;
     border-radius: 18px;
-
 }
 
 .Stop-item > .Stop-detail > .Name {
@@ -35,6 +34,7 @@
     align-items: center;
     text-transform: lowercase;
 }
+
 
 .Stop-item > .Stop-action > .Line {
     /* Line: */
@@ -65,4 +65,32 @@
     display: inline-block;
     padding: 4px 13px;
     line-height: 36px;
+}
+
+
+/*
+    EXPANDED
+*/
+.Stop-item > .Stop-detail-expanded{
+    background-color: #ED1D25;
+    padding-top: 8px; 
+}
+
+.Stop-item > .Stop-detail-expanded > .Name {
+    font-family: Roboto-Regular, -apple-system, Arial, Helvetica, sans-serif;;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+.Stop-item > .Stop-detail-expanded > .Dot {
+    background: #FFFFFF;
+    border: 3px solid #fff;
+    margin-left: 84px;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
 }
