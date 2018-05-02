@@ -31,29 +31,27 @@ export default class StopItem extends Component{
             )
         })) : null;
 
-
-        const stopDetailNode = (expanded) ? (
-            <div className='Stop-detail-expanded' style={{backgroundColor: color}}>
-                <div className='Dot'></div>
-                <div className='Name'>{stop.name}</div>
+        return (expanded) ?
+        (
+            <div className='Stop-item'>
+                <div className='Stop-detail-expanded' style={{backgroundColor: color}}>
+                    <div className='Dot'></div>
+                    <div className='Name'>{stop.name}</div>
+                </div>
+                <div className='Hour-scroller' style={{backgroundColor: color}}>
+                    {hourScroll}
+                </div>
+                <div className='Stop-action'>
+                    <div className='Line'></div>
+                </div>
             </div>
         ):(
-            <div className='Stop-detail'>
-                <div className='Hour'>{stop.stops[0]}</div>
-                <div className='Dot'></div>
-                <div className='Name'>{stop.name}</div>
-            </div>
-        );
-
-
-        return (
             <div className='Stop-item' onClick={this.clickHandler}>
-                {stopDetailNode}
-                { expanded &&
-                    <div className='Hour-scroller' style={{backgroundColor: color}}>
-                        {hourScroll}
-                    </div>
-                }
+                <div className='Stop-detail'>
+                    <div className='Hour'>{stop.stops[0]}</div>
+                    <div className='Dot'></div>
+                    <div className='Name'>{stop.name}</div>
+                </div>
                 <div className='Stop-action'>
                     <div className='Line'></div>
                 </div>
