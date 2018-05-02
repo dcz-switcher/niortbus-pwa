@@ -1,7 +1,7 @@
 .Line-header{
     /* Rectangle: */
     background: #ED1D25;
-    font-family: Roboto-Medium;
+    font-family: Roboto-Medium, -apple-system, Arial, Helvetica, sans-serif;;
     font-size: 22px;
     color: #FFFFFF;
     height: 74px;

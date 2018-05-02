@@ -8,7 +8,7 @@
 }
 
 .Stop-item > .Stop-detail > .Hour {
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, -apple-system, Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #4A90E2;
     width: 84px;
@@ -27,7 +27,7 @@
 }
 
 .Stop-item > .Stop-detail > .Name {
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, -apple-system, Arial, Helvetica, sans-serif;;
     font-size: 18px;
     color: #4A4A4A;
     margin: 0 20px;

@@ -1,5 +1,5 @@
 h1{
-    font-family: Roboto-Black;
+    font-family: Roboto-Black, -apple-system, Arial, Helvetica, sans-serif;
     font-size: 36px;
     color: #000000;
     padding: 0;
@@ -7,7 +7,7 @@ h1{
 }
 
 h4{
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, -apple-system, Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #9B9B9B;
     padding: 0;
