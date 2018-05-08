@@ -5,7 +5,7 @@ import './DetailView.css';
 
 import DetailHeader from './../components/DetailHeader';
 import StopItem from './../components/StopItem';
-
+import ModalPeriod from './../components/ModalPeriod';
 import DetailPeriod from './../components/DetailPeriod';
 
 export default class DetailView extends Component{
@@ -17,6 +17,7 @@ export default class DetailView extends Component{
             stopItemExpanded: null,
             hourIndexSelected: 0,
             invertDirection: false,
+            showModalPeriod: false,
         };
     }
 
@@ -39,6 +40,7 @@ export default class DetailView extends Component{
 
         const line = this.props.line;
         const data = line.data;
+
         var direction = 'aller';
         var start = data.departure;
         var end = data.arrival;
@@ -49,6 +51,11 @@ export default class DetailView extends Component{
             end = data.departure;
         }
         
+        const modalPeriod = (this.state.showModalPeriod) ? (
+            <ModalPeriod onCancel={() => this.setState({showModalPeriod: false})}/>
+        ) : null;
+
+
         console.log(data.periodes[0][direction]);
 
         return (
@@ -61,7 +68,7 @@ export default class DetailView extends Component{
                         onInvert={this.onInvertHandler}
                         />
 
-                <DetailPeriod />              
+                <DetailPeriod onTap={() => this.setState({showModalPeriod: true})}/>              
 
                 <div className='Detail-stops'>
                     {
@@ -78,6 +85,9 @@ export default class DetailView extends Component{
                         })
                     }
                 </div>
+
+                {modalPeriod}
+
             </div>
         );
     }

@@ -1,0 +1,25 @@
+.Modal-period, .Overlay-opacity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+}
+
+.Overlay-opacity{
+    background-color: #666;
+    opacity: .8;
+}
+
+.Modal-period > .Modal-content{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 6px;
+}

@@ -5,6 +5,7 @@ import './App.css';
 import HomeView from './views/HomeView';
 import DetailView from './views/DetailView';
 
+
 class App extends Component {
 
     constructor(props){
