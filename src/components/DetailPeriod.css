@@ -1,0 +1,15 @@
+.Period-selector{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    align-items: center;
+    padding: 8px;
+}
+
+.Period-selector > .Period-label {
+    flex-grow: 2;
+    text-align: center;
+    color: #4A4A4A;
+}
