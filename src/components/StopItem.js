@@ -18,10 +18,7 @@ export default class StopItem extends Component{
         this.props.clicked(value);
     }
 
-    hourClickHandler = () => {
-        console.log("click")
-    }
-
+    
     render(){
 
         const stop = this.props.stop;
@@ -31,7 +28,7 @@ export default class StopItem extends Component{
 
         const hourScroll = (expanded) ? (stop.stops.map((item, index) => {
             return (
-                <div key={index} className='HourScroller-item' onClick={this.hourClickHandler}>{item}</div>
+                <div key={index} className='HourScroller-item' onClick={() => this.props.hourClicked(index)}>{item}</div>
             )
         })) : null;
 
@@ -67,6 +64,7 @@ export default class StopItem extends Component{
 StopItem.propTypes = {
     id: PropTypes.number.isRequired,
     clicked: PropTypes.func.isRequired,
+    hourClicked: PropTypes.func.isRequired,
     stop: PropTypes.object.isRequired,
     color: PropTypes.string.isRequired,
     expanded: PropTypes.bool.isRequired,

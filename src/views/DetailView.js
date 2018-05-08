@@ -43,7 +43,9 @@ export default class DetailView extends Component{
                                         stop={stop}
                                         color={line.color}
                                         expanded={index === this.state.stopItemExpanded}
-                                        clicked={(id) => this.setState({stopItemExpanded: id})}/>
+                                        clicked={(id) => this.setState({stopItemExpanded: id})}
+                                        hourClicked={(index) => console.log('hour clicked index = ' + index)}
+                                        />
                         })
                     }
                 </div>
