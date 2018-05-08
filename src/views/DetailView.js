@@ -6,6 +6,7 @@ import './DetailView.css';
 import DetailHeader from './../components/DetailHeader';
 import StopItem from './../components/StopItem';
 
+import DetailPeriod from './../components/DetailPeriod';
 
 export default class DetailView extends Component{
 
@@ -59,7 +60,9 @@ export default class DetailView extends Component{
                         onBack={this.props.onBack}
                         onInvert={this.onInvertHandler}
                         />
-               
+
+                <DetailPeriod />              
+
                 <div className='Detail-stops'>
                     {
                         data.periodes[0][direction].map((stop, index) => {

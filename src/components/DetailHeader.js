@@ -25,6 +25,8 @@ DetailHeader.propTypes = {
     numberPosition: PropTypes.string.isRequired,
     start: PropTypes.string.isRequired,
     end: PropTypes.string.isRequired,
+    onBack: PropTypes.func.isRequired,
+    onInvert: PropTypes.func.isRequired,
 }
 
 export default DetailHeader;
