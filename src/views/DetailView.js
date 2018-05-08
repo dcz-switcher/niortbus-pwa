@@ -46,19 +46,23 @@ export default class DetailView extends Component{
         var start = data.departure;
         var end = data.arrival;
         
+        // invert direction if wanted
         if (this.state.invertDirection) {
             direction = 'retour';
             start = data.arrival;
             end = data.departure;
         }
         
+        // show modal is asked for
         const modalPeriod = (this.state.showModalPeriod) ? (
-            <ModalPeriod 
+            <ModalPeriod
+                periods={data.periodes}
+                onSelect={() => console.log('another period is selected')}
                 onCancel={() => this.setState({showModalPeriod: false})}/>
         ) : null;
 
 
-        console.log(data.periodes[this.state.periodIndexSelected][direction]);
+        //console.log(data.periodes[this.state.periodIndexSelected][direction]);
 
         return (
             <div className={this.isVisible()}>
