@@ -47,9 +47,13 @@ export default class DetailView extends Component{
         return (
             <div className={this.isVisible()}>
 
-                <img src={backBtn} style={style.backBtn} onClick={() => this.props.onClick() } alt=''/>
-                <img src={invertArrow} style={style.invertArrow} onClick={this.invertArrowClickHandler} alt=''/>
-                <DetailHeader start={data.departure} end={data.arrival} color={line.color} numberPosition={line.numberPosition} />
+                <img src={backBtn} className="Back-btn" onClick={() => this.props.onBack() } alt=''/>
+                <img src={invertArrow} className="Invert-arrow" onClick={this.invertArrowClickHandler} alt=''/>
+                <DetailHeader start={data.departure} end={data.arrival} 
+                        color={line.color} 
+                        numberPosition={line.numberPosition} 
+                        />
+               
                 <div className='Detail-stops'>
                     {
                         data.periodes[0][direction].map((stop, index) => {
@@ -71,25 +75,8 @@ export default class DetailView extends Component{
 }
 
 
-const style = {
-    backBtn: {
-        position: 'absolute',
-        top: '8px',
-        right: '8px',
-        color: 'white',
-    },
-    invertArrow: {
-        position: 'absolute',
-        right: '8px',
-        top: '48px',
-        color: 'white',
-        transform: 'rotate(90deg)',
-    }
-}
-
-
 DetailView.propTypes = {
-    onClick: PropTypes.func.isRequired,
+    onBack: PropTypes.func.isRequired,
     line: PropTypes.shape({
         busId: PropTypes.string.isRequired,
         color: PropTypes.string.isRequired,

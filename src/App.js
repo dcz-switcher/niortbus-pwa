@@ -19,7 +19,7 @@ class App extends Component {
 
         const _lineSelected = this.state.lineSelected;
         const showDetailView = _lineSelected !== null ? (
-            <DetailView onClick={this.onBack} line={_lineSelected} />
+            <DetailView onBack={this.onBack} line={_lineSelected} />
         ) 
         : ( null );
 

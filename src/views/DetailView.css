@@ -7,3 +7,18 @@
     right: 0;
     padding: 20px 0;
 }
+
+.Detail-view .Back-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: white;
+}
+
+.Detail-view .Invert-arrow{
+    position: absolute;
+    right: 8px;
+    top: 48px;
+    color: white;
+    transform: rotate(90deg);
+}
