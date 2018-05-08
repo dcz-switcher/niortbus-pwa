@@ -10,7 +10,7 @@
     margin-bottom: 24px;
 }
 
-.Line-header:active {
+.Home-view .Line-header:active {
     opacity: .6;
     transform: scale(.99);
 }
