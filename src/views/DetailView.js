@@ -15,6 +15,7 @@ export default class DetailView extends Component{
 
         this.state = {
             stopItemExpanded: null,
+            periodIndexSelected: 0,
             hourIndexSelected: 0,
             invertDirection: false,
             showModalPeriod: false,
@@ -52,11 +53,12 @@ export default class DetailView extends Component{
         }
         
         const modalPeriod = (this.state.showModalPeriod) ? (
-            <ModalPeriod onCancel={() => this.setState({showModalPeriod: false})}/>
+            <ModalPeriod 
+                onCancel={() => this.setState({showModalPeriod: false})}/>
         ) : null;
 
 
-        console.log(data.periodes[0][direction]);
+        console.log(data.periodes[this.state.periodIndexSelected][direction]);
 
         return (
             <div className={this.isVisible()}>
@@ -68,11 +70,13 @@ export default class DetailView extends Component{
                         onInvert={this.onInvertHandler}
                         />
 
-                <DetailPeriod onTap={() => this.setState({showModalPeriod: true})}/>              
+                <DetailPeriod 
+                    periodLabel={data.periodes[this.state.periodIndexSelected]['name']}
+                    onTap={() => this.setState({showModalPeriod: true})}/>              
 
                 <div className='Detail-stops'>
                     {
-                        data.periodes[0][direction].map((stop, index) => {
+                        data.periodes[this.state.periodIndexSelected][direction].map((stop, index) => {
                             return <StopItem key={index}
                                         id={index} 
                                         stop={stop}
