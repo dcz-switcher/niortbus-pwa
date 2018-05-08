@@ -25,3 +25,7 @@ h4{
 .Home-view > .Home-body {
     padding: 0 20px;
 }
+
+.Home-view .Line-number{
+    margin-top: 10px;
+}

@@ -81,7 +81,7 @@ const style = {
     invertArrow: {
         position: 'absolute',
         right: '8px',
-        top: '42px',
+        top: '48px',
         color: 'white',
         transform: 'rotate(90deg)',
     }
