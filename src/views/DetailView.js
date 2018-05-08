@@ -38,14 +38,22 @@ export default class DetailView extends Component{
 
         const line = this.props.line;
         const data = line.data;
-        const direction = (this.state.invertDirection) ? 'retour' : 'aller';
-
+        var direction = 'aller';
+        var start = data.departure;
+        var end = data.arrival;
+        
+        if (this.state.invertDirection) {
+            direction = 'retour';
+            start = data.arrival;
+            end = data.departure;
+        }
+        
         console.log(data.periodes[0][direction]);
 
         return (
             <div className={this.isVisible()}>
 
-                <DetailHeader start={data.departure} end={data.arrival} 
+                <DetailHeader start={start} end={end} 
                         color={line.color} 
                         numberPosition={line.numberPosition}
                         onBack={this.props.onBack}
