@@ -49,7 +49,7 @@ export default class StopItem extends Component{
         ):(
             <div className='Stop-item' onClick={this.clickHandler}>
                 <div className='Stop-detail'>
-                    <div className='Hour'>{stop.stops[0]}</div>
+                    <div className='Hour'>{stop.stops[this.props.hourIndexSelected]}</div>
                     <div className='Dot'></div>
                     <div className='Name'>{stop.name}</div>
                 </div>
@@ -65,6 +65,7 @@ StopItem.propTypes = {
     id: PropTypes.number.isRequired,
     clicked: PropTypes.func.isRequired,
     hourClicked: PropTypes.func.isRequired,
+    hourIndexSelected: PropTypes.number.isRequired,
     stop: PropTypes.object.isRequired,
     color: PropTypes.string.isRequired,
     expanded: PropTypes.bool.isRequired,

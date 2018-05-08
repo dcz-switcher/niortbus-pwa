@@ -15,6 +15,7 @@ export default class DetailView extends Component{
 
         this.state = {
             stopItemExpanded: null,
+            hourIndexSelected: 0,
         };
     }
 
@@ -23,6 +24,12 @@ export default class DetailView extends Component{
         //return 'Detail-view ' + ( (this.props.visible) ? 'show' : '' );
         return 'Detail-view show';
     }
+
+    hourClickedHandler = (index) => {
+        this.setState({hourIndexSelected: index});
+    }
+    
+
 
     render() {
 
@@ -43,8 +50,9 @@ export default class DetailView extends Component{
                                         stop={stop}
                                         color={line.color}
                                         expanded={index === this.state.stopItemExpanded}
+                                        hourIndexSelected={this.state.hourIndexSelected}
                                         clicked={(id) => this.setState({stopItemExpanded: id})}
-                                        hourClicked={(index) => console.log('hour clicked index = ' + index)}
+                                        hourClicked={this.hourClickedHandler}
                                         />
                         })
                     }
