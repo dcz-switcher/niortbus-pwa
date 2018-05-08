@@ -17,6 +17,7 @@ export default class DetailView extends Component{
         this.state = {
             stopItemExpanded: null,
             hourIndexSelected: 0,
+            invertDirection: false,
         };
     }
 
@@ -31,15 +32,17 @@ export default class DetailView extends Component{
     
 
     invertArrowClickHandler = () => {
-        console.log('invert direction');
+        this.setState({stopItemExpanded: null});
+        this.setState({invertDirection: !this.state.invertDirection});
     }
 
     render() {
 
         const line = this.props.line;
         const data = line.data;
+        const direction = (this.state.invertDirection) ? 'retour' : 'aller';
 
-        console.log(data.periodes[0]['aller']);
+        console.log(data.periodes[0][direction]);
 
         return (
             <div className={this.isVisible()}>
@@ -49,7 +52,7 @@ export default class DetailView extends Component{
                 <DetailHeader start={data.departure} end={data.arrival} color={line.color} numberPosition={line.numberPosition} />
                 <div className='Detail-stops'>
                     {
-                        data.periodes[0]['aller'].map((stop, index) => {
+                        data.periodes[0][direction].map((stop, index) => {
                             return <StopItem key={index}
                                         id={index} 
                                         stop={stop}
