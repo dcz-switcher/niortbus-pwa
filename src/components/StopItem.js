@@ -33,7 +33,7 @@ export default class StopItem extends Component{
         })) : null;
 
         return (expanded) ?
-        (
+        ( // expanded
             <div className='Stop-item'>
                 <div className='Stop-detail-expanded' style={{backgroundColor: color}}>
                     <div className='Dot'></div>
@@ -46,7 +46,7 @@ export default class StopItem extends Component{
                     <div className='Line'></div>
                 </div>
             </div>
-        ):(
+        ):( // not expanded
             <div className='Stop-item' onClick={this.clickHandler}>
                 <div className='Stop-detail'>
                     <div className='Hour'>{stop.stops[this.props.hourIndexSelected]}</div>

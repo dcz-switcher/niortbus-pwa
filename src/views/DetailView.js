@@ -21,7 +21,6 @@ export default class DetailView extends Component{
 
 
     isVisible() {
-        //return 'Detail-view ' + ( (this.props.visible) ? 'show' : '' );
         return 'Detail-view show';
     }
 
@@ -29,7 +28,6 @@ export default class DetailView extends Component{
         this.setState({hourIndexSelected: index});
     }
     
-
 
     render() {
 
