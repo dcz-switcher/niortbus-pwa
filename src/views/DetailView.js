@@ -6,8 +6,6 @@ import './DetailView.css';
 import DetailHeader from './../components/DetailHeader';
 import StopItem from './../components/StopItem';
 
-import backBtn from './../assets/ic_close_white_24px.svg';
-import invertArrow from './../assets/ic_compare_arrows_white_24px.svg';
 
 export default class DetailView extends Component{
 
@@ -31,7 +29,7 @@ export default class DetailView extends Component{
     }
     
 
-    invertArrowClickHandler = () => {
+    onInvertHandler = () => {
         this.setState({stopItemExpanded: null});
         this.setState({invertDirection: !this.state.invertDirection});
     }
@@ -47,11 +45,11 @@ export default class DetailView extends Component{
         return (
             <div className={this.isVisible()}>
 
-                <img src={backBtn} className="Back-btn" onClick={() => this.props.onBack() } alt=''/>
-                <img src={invertArrow} className="Invert-arrow" onClick={this.invertArrowClickHandler} alt=''/>
                 <DetailHeader start={data.departure} end={data.arrival} 
                         color={line.color} 
-                        numberPosition={line.numberPosition} 
+                        numberPosition={line.numberPosition}
+                        onBack={this.props.onBack}
+                        onInvert={this.onInvertHandler}
                         />
                
                 <div className='Detail-stops'>
