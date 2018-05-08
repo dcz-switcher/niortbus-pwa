@@ -54,7 +54,7 @@
     overflow-y: hidden;
     white-space: nowrap;
     margin: 0;
-    height: 44px;
+    padding: 4px;
     background-color: #666;
     display: flex;
     align-items: center;
@@ -65,6 +65,21 @@
     display: inline-block;
     padding: 4px 13px;
     line-height: 36px;
+}
+
+.Stop-item .HourScroller-item-selected{
+    color: white;
+    display: inline-block;
+    padding: 4px 13px;
+    line-height: 36px;
+}
+
+.Stop-item .HourScroller-selected {
+    background-color: #fff;
+    border-radius: 20px;
+}
+.Stop-item .HourScroller-selected .HourScroller-item{
+    color: #666;
 }
 
 

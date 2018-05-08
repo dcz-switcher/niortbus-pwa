@@ -27,6 +27,16 @@ export default class StopItem extends Component{
 
 
         const hourScroll = (expanded) ? (stop.stops.map((item, index) => {
+            if (index === this.props.hourIndexSelected) {
+                return (
+                    <div key={index} onClick={() => this.props.hourClicked(index)} className="HourScroller-selected">
+                        <span className='HourScroller-item'>
+                            {item}
+                        </span>
+                    </div>
+                )
+            } 
+
             return (
                 <div key={index} className='HourScroller-item' onClick={() => this.props.hourClicked(index)}>{item}</div>
             )
