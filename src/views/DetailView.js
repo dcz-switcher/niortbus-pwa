@@ -48,14 +48,6 @@ export default class DetailView extends Component{
             end = data.departure;
         }
         
-        // show modal is asked for
-        const modalPeriod = (this.state.showModalPeriod) ? (
-            <ModalPeriod
-                periods={data.periodes}
-                onSelect={() => console.log('another period is selected')}
-                onCancel={() => this.setState({showModalPeriod: false})}/>
-        ) : null;
-
 
         //console.log(data.periodes[this.state.periodIndexSelected][direction]);
 
@@ -89,7 +81,12 @@ export default class DetailView extends Component{
                     }
                 </div>
 
-                {modalPeriod}
+                {this.state.showModalPeriod === true &&
+                    <ModalPeriod
+                        periods={data.periodes}
+                        onSelect={() => console.log('another period is selected')}
+                        onCancel={() => this.setState({showModalPeriod: false})}/>
+                }
 
             </div>
         );
