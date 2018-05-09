@@ -17,9 +17,27 @@
 .Modal-period > .Modal-content{
     box-sizing: border-box;
     position: absolute;
-    background-color: #fff;
+    background-color: #eee;
     width: 80%;
-    height: 50%;
-    padding: 20px;
+    height: auto;
+    padding: 10px;
     border-radius: 6px;
+}
+
+.Modal-content .Modal-title{
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+}
+
+.Modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Modal-content li {
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #4A90E2;
 }

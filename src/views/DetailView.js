@@ -32,6 +32,11 @@ export default class DetailView extends Component{
         this.setState({invertDirection: !this.state.invertDirection});
     }
 
+    onPeriodSelected = (index) => {
+        this.setState({periodIndexSelected: index});
+        this.setState({showModalPeriod: false});
+    }
+
     render() {
 
         const line = this.props.line;
@@ -84,7 +89,7 @@ export default class DetailView extends Component{
                 {this.state.showModalPeriod === true &&
                     <ModalPeriod
                         periods={data.periodes}
-                        onSelect={() => console.log('another period is selected')}
+                        onSelect={this.onPeriodSelected}
                         onCancel={() => this.setState({showModalPeriod: false})}/>
                 }
 
