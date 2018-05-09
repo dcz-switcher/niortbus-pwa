@@ -1,5 +1,11 @@
+.Detail-view{
+    overflow: hidden;
+    -webkit-overflow-scrolling: auto;
+}
+
 .Detail-view > .Detail-stops{
-    overflow: auto;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     position: absolute;
     top: 130px;
     bottom: 0;

@@ -22,11 +22,6 @@ export default class DetailView extends Component{
         };
     }
 
-
-    isVisible() {
-        return 'Detail-view show';
-    }
-
     hourClickedHandler = (index) => {
         this.setState({hourIndexSelected: index});
     }
@@ -65,7 +60,7 @@ export default class DetailView extends Component{
         //console.log(data.periodes[this.state.periodIndexSelected][direction]);
 
         return (
-            <div className={this.isVisible()}>
+            <div className='Detail-view'>
 
                 <DetailHeader start={start} end={end} 
                         color={line.color} 

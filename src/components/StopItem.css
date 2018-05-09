@@ -50,7 +50,8 @@
 
 .Stop-item > .Hour-scroller {
     width: auto;
-    overflow-x: auto;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
     white-space: nowrap;
     margin: 0;
