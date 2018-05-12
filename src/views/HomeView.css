@@ -15,7 +15,8 @@ h4{
 }
 
 .Home-view{
-    overflow: auto;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .Home-view > .Home-header {
