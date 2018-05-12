@@ -1,6 +1,7 @@
 .Detail-view{
     overflow: hidden;
     -webkit-overflow-scrolling: auto;
+    z-index: 99;
 }
 
 .Detail-view > .Detail-stops{
