@@ -7,8 +7,8 @@ const Config  = {
         {busId : '5', color: '#2C77BB', start: 'Parpin / château Driguet', end: 'Chaintre brûlée', numberPosition: '74px -256px', data: require('./lines/ligne5.json')},
         {busId : '6', color: '#8CC63E', start: 'Surimeau', end: 'St Liguaire', numberPosition: '74px -320px', data: require('./lines/ligne6.json')},
         {busId : '7', color: '#A4548B', start: 'Brizeaux CAF', end: 'Pied de fond / Montamisé', numberPosition: '74px -395px', data: require('./lines/ligne7.json')},
-        {busId : '8', color: '#DE2370', start: 'Surimeau', end: 'Trente Ormeaux', numberPosition: '74px -459px', data: require('./lines/ligne8.json')},
-        {busId : '9', color: '#F49719', start: 'Pôle Atlantique', end: 'Collège Curie', numberPosition: '74px -523px', data: require('./lines/ligne9.json')},
+        {busId : '8', color: '#DE2370', start: 'Surimeau', end: 'Trente Ormeaux', numberPosition: '74px -470px', data: require('./lines/ligne8.json')},
+        {busId : '9', color: '#F49719', start: 'Pôle Atlantique', end: 'Collège Curie', numberPosition: '74px -550px', data: require('./lines/ligne9.json')},
     ],
 }
 
