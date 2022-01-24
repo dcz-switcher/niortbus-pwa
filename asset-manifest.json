@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/niortbus-pwa/static/css/main.d4a6d7de.chunk.css",
-    "main.js": "/niortbus-pwa/static/js/main.5023f9be.chunk.js",
-    "main.js.map": "/niortbus-pwa/static/js/main.5023f9be.chunk.js.map",
+    "main.css": "/niortbus-pwa/static/css/main.08b250ef.chunk.css",
+    "main.js": "/niortbus-pwa/static/js/main.c486d3d2.chunk.js",
+    "main.js.map": "/niortbus-pwa/static/js/main.c486d3d2.chunk.js.map",
     "runtime-main.js": "/niortbus-pwa/static/js/runtime-main.d4b4c9d5.js",
     "runtime-main.js.map": "/niortbus-pwa/static/js/runtime-main.d4b4c9d5.js.map",
     "static/js/2.f8436db5.chunk.js": "/niortbus-pwa/static/js/2.f8436db5.chunk.js",
     "static/js/2.f8436db5.chunk.js.map": "/niortbus-pwa/static/js/2.f8436db5.chunk.js.map",
     "index.html": "/niortbus-pwa/index.html",
-    "precache-manifest.08a30cc754140d1ba6b03e75d6de41da.js": "/niortbus-pwa/precache-manifest.08a30cc754140d1ba6b03e75d6de41da.js",
+    "precache-manifest.60e9415d2881a86e34cc1dd35ef13af9.js": "/niortbus-pwa/precache-manifest.60e9415d2881a86e34cc1dd35ef13af9.js",
     "service-worker.js": "/niortbus-pwa/service-worker.js",
-    "static/css/main.d4a6d7de.chunk.css.map": "/niortbus-pwa/static/css/main.d4a6d7de.chunk.css.map",
+    "static/css/main.08b250ef.chunk.css.map": "/niortbus-pwa/static/css/main.08b250ef.chunk.css.map",
     "static/js/2.f8436db5.chunk.js.LICENSE.txt": "/niortbus-pwa/static/js/2.f8436db5.chunk.js.LICENSE.txt",
     "static/media/ic_close_white_24px.svg": "/niortbus-pwa/static/media/ic_close_white_24px.7b66831c.svg",
     "static/media/ic_compare_arrows_white_24px.svg": "/niortbus-pwa/static/media/ic_compare_arrows_white_24px.1643e4c0.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.d4b4c9d5.js",
     "static/js/2.f8436db5.chunk.js",
-    "static/css/main.d4a6d7de.chunk.css",
-    "static/js/main.5023f9be.chunk.js"
+    "static/css/main.08b250ef.chunk.css",
+    "static/js/main.c486d3d2.chunk.js"
   ]
 }
