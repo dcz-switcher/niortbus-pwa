@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/niortbus-pwa/precache-manifest.60e9415d2881a86e34cc1dd35ef13af9.js"
+  "/niortbus-pwa/precache-manifest.eca8ac222aa4e319387cda74fcdc0885.js"
 );
 
 self.addEventListener('message', (event) => {

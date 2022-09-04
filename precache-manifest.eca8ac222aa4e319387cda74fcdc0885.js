@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "89d788a4a4fe0fd52686e301fd2d0d59",
+    "revision": "30510c15ab301773011cbddac06fa7f4",
     "url": "/niortbus-pwa/index.html"
   },
   {
-    "revision": "15944faf3b403346fbe9",
+    "revision": "0f712a6061ae79e1b1c2",
     "url": "/niortbus-pwa/static/css/main.08b250ef.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/niortbus-pwa/static/js/2.f8436db5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15944faf3b403346fbe9",
-    "url": "/niortbus-pwa/static/js/main.c486d3d2.chunk.js"
+    "revision": "0f712a6061ae79e1b1c2",
+    "url": "/niortbus-pwa/static/js/main.e3dd6f7a.chunk.js"
   },
   {
     "revision": "dbfcf687720bf28bd0f7",
