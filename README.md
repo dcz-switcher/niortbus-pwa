@@ -19,6 +19,12 @@ Si vous avez des questions, remarques : david.chollez[@]gmail[.com]
 ![image](https://user-images.githubusercontent.com/299807/45252941-d2384180-b35e-11e8-9828-fd09a0a27e0a.png)
 ![image](https://user-images.githubusercontent.com/299807/45252942-d2384180-b35e-11e8-87d8-244d7cce7f8f.png)
 
+### Publication sur Github pages
+Après avoir poussé sur le repo les modifications : 
+
+`npm run deploy`
+
+
 #
 
 ## Une progressive web app ?!? c'est quoi ?
