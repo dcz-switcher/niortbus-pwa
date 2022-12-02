@@ -15,10 +15,9 @@
 }
 
 .Line-number{
-    margin-top: 16px;
+    margin-top: 6px;
     width: 74px;
-    min-width: 74px;
-    height: 64px;
+    height: 74px;
     background-position: 74px 0px;
 }
 
