@@ -1,4 +1,5 @@
 const Config  = {
+    version : 'v. 231008',
     lines : [
         {busId : '1', color: '#ED1D25', start: 'Université', end: 'Chauray', numberPosition: '74px 0', data: require('./lines/ligne1.json')},
         {busId : '2', color: '#00854B', start: 'Bessines', end: 'Brizeaux CAF', numberPosition: '74px -74px', data: require('./lines/ligne2.json')},

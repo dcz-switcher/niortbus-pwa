@@ -10,7 +10,10 @@ import LineButton from './../components/LineButton';
 const HomeView = ({onSelect}) => (
     <div className="Home-view">
         <header className="Home-header">
-            <h4>Niort bus</h4>
+            <div className='app-bar'>
+                <h4>Niort bus</h4>
+                <span className="text-xsmall color-gray-light">{ Config.version }</span>
+            </div>
             <h1>Lignes TAN</h1>
         </header>
         <div className="Home-body">

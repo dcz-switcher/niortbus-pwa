@@ -14,6 +14,20 @@ h4{
     margin: 0 0 4px 0;
 }
 
+.color-gray-light{
+    color: #9B9B9B;
+}
+
+.text-normal{
+    font-family: Roboto-Regular, -apple-system, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.text-xsmall{
+    font-family: Roboto-Regular, -apple-system, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
 .Home-view{
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
@@ -21,6 +35,11 @@ h4{
 
 .Home-view > .Home-header {
     padding: 27px 20px;
+}
+
+.Home-view > .Home-header > .app-bar {
+    display: flex;
+    justify-content: space-between;
 }
 
 .Home-view > .Home-body {
